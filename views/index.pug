@@ -1,0 +1,12 @@
+html
+    head
+        link(ref="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet" href="css/materialize.min.css" media="screen,projection")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    body
+        script(type="text/javascript" src="js/materialize.min.js")
+        div(class="container")
+            each row in results
+                div(class="timeline1") #{row['user_name']} #{row['post_datetime']}
+                div(class="timeline2") #{row['post_content']}
+        
